@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carte</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Formulaire -->
+    <div id="form-container">
+      <h2>Remplir les informations</h2>
+      
+      <label for="firstName">Nom</label>
+      <input type="text" id="firstName" placeholder="Nom" required>
+      
+      <label for="lastName">Prénom(s)</label>
+      <input type="text" id="lastName" placeholder="Prénom(s)" required>
+  
+      <label for="gender">Sexe</label>
+      <select id="gender" required>
+        <option value="">Sélectionner</option>
+        <option value="Homme">Homme</option>
+        <option value="Femme">Femme</option>
+      </select>
+      
+      <label for="birthday">Date de naissance</label>
+      <input type="date" id="birthday" required>
+      
+      <label for="birth">Lieu de naissance</label>
+      <input type="text" id="birth" placeholder="Lieu de naissance" required>
+      
+      <label for="nationality">Nationalité</label>
+      <input type="text" id="nationality" placeholder="Nationalité" required>
+      
+      <label for="city">Ville de résidence</label>
+      <input type="text" id="city" placeholder="Ville de résidence" required>
+      
+      <label for="residency">Arrondissement</label>
+      <input type="text" id="residency" placeholder="Arrondissement" required>
+      
+      <label for="district">Quartier</label>
+      <input type="text" id="district" placeholder="Quartier de résidence" required>
+      
+      <label for="profession">Profession</label>
+      <input type="text" id="profession" placeholder="Profession" required>
+      
+      <label for="phone">Téléphone</label>
+      <input type="number" id="phone" placeholder="Nº de Téléphone" max-size="10" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Adresse Email" required>
+  
+      <label for="photo">Photo</label>
+      <input type="file" id="photo" accept="image/*" placeholder="URL de la photo">
+  
+      <button onclick="createCard()" id="generator"> Générer</button>
+      
+    </div>
+    
+    <!-- Visuel de la carte -->
+    <div class="carte" id="carte" >
+        <!-- Entête de la carte -->
+        <h2>Carte d'Identité Unique</h2>
+        <!-- Identité -->
+        <div class="identity">
+            <div id="photoId">
+                <img src="" alt="Photo d'identité" id="photoCard">
+            </div>
+            <div class="identityDetails">
+                <p id="identifiant"></p>
+                <p id="firstNameCard"></p>
+                <p id="lastNameCard"></p>
+                <p id="genderCard"></p>
+                <p id="birthdayCard"></p>
+                <p id="birthCard"></p>
+                <p id="nationalityCard"></p>
+            </div>
+        </div>
+        
+        <!-- Adresses -->
+        <div class="address">
+            <fieldset>
+                <legend>Adresses</legend>
+                <div class="firstAddress">
+                    <p id="cityCard"></p>
+                    <p id="residencyCard"></p>
+                    <p id="districtCard"></p>
+                </div>
+                <div class="secondAddress">
+                    <p id="professionCard"></p>
+                    <p id="phoneCard"></p>
+                    <p id="emailCard"></p>
+                </div>
+            </fieldset>
+        </div>
+        
+    </div>
+    
+    <button id="teleCarte" onclick="generatePDF()"> Télécharger votre carte ici !!!</button>
+   
+   <!-- Scripts --> 
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>

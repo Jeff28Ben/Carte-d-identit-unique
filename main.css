@@ -1,0 +1,159 @@
+body {
+    min-width: 1200px;
+    padding: 0;
+    margin: 0;    
+    align-items: center;
+    background: #00162e;
+}
+#form-container{
+    width: 800px;
+    margin: 15px auto;
+    padding: 10px;
+    background: rgba(20, 20, 200, 0.8);
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+    border: aqua solid 1px;
+    box-shadow: 1px 0px 2px aqua;
+}
+input, select, button {
+    width: 98%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(30, 255, 240, 0.4);
+    padding: 5px;
+    padding-left: 10px;
+    margin: 8px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: none;
+}
+input, button {
+    text-transform: uppercase;
+}
+label {
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+#form-container h2 {
+    text-align: center;
+}
+
+#form-container button {
+    width: 50%;
+    height: 50px;
+    margin: 10px auto;
+    margin-left: 20%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+/* C A R T E */
+
+.carte {
+    display: none;
+    width: 1011px;
+    height: 638px;
+    margin: 20px;
+    padding: 20px;
+    background: #00162e;
+    color: aqua;
+    border-radius: 40px;
+    border: 3px solid aqua;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+.carte h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-style: italic;
+    letter-spacing: 10px;
+}
+.carte .identity {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carte .identity #photoId {
+    width: 30%;
+    height: 80%;
+    margin: 30px;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid aqua;
+}
+.carte .identity #photoId img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: fill;
+}
+.carte .identity .identityDetails {
+    width: 70%;
+    height: 90%;
+    background: transparent;
+    margin: 10px;
+    padding-left: 20px;
+}
+.carte .identity .identityDetails p{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+.carte .address {
+    width: 90%;
+    height: 28%;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+.carte .address fieldset{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px;
+    border: 5px solid aqua;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+legend {
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+.carte .address .firstAddress, .secondAddress {
+    width: 50%;
+}
+
+#teleCarte {
+    display: none;
+    width: 300px;
+    height: 100px;
+    background: #00162e;
+    border: 3px solid aqua;
+    border-radius: 50px;
+    margin: 30px auto;
+    text-align: center;
+    font-weigth: bold;
+    color: aqua;
+}
+#teleCarte:hover {
+    background: aqua;
+    color: #00162e;
+    font-weigth: bold;
+}
+
+
+
